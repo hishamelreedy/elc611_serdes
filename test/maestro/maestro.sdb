@@ -220,14 +220,14 @@
 				</extensions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Mar 13 21:25:44 2024
+			<timestamp>Fri Mar 15 19:22:38 2024
 </timestamp>
 			<resultsname>/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/serdes/test/maestro/results/maestro/ExplorerRun.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/berkeley_cadence_212544673</localpsfdir>
+			<localpsfdir>/tmp/berkeley_cadence_192238594</localpsfdir>
 			<psfdir>/home/cadence/simulation/serdes/test/maestro/results/maestro/ExplorerRun.0</psfdir>
 			<simdir>$AXL_PROJECT_DIR/serdes/test/maestro/results/maestro/ExplorerRun.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>

@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      cadence
 HostName                       berkeley.localdomain
-ProcessIdentifier              8075
-ProcessCreationTime_UTC        1710367478
-ProcessCreationTime_Readable   Wed Mar 13 18:04:38 2024 EDT
+ProcessIdentifier              1540
+ProcessCreationTime_UTC        1710538248
+ProcessCreationTime_Readable   Fri Mar 15 17:30:48 2024 EDT
 AppIdentifier                  /usr/local/cadence/IC617/tools/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       
-FilePathUsedToEditLock         /home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/serdes/TX/constraint/prop.cfg
-TimeEditLocked                 Fri Mar 15 12:17:52 2024 EDT
+FilePathUsedToEditLock         /home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/serdes/test/maestro/maestro.sdb
+TimeEditLocked                 Fri Mar 15 17:33:21 2024 EDT

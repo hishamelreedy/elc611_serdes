@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      cadence
 HostName                       berkeley.localdomain
-ProcessIdentifier              1796
-ProcessCreationTime_UTC        1710617025
-ProcessCreationTime_Readable   Sat Mar 16 15:23:45 2024 EDT
+ProcessIdentifier              8075
+ProcessCreationTime_UTC        1710367481
+ProcessCreationTime_Readable   Wed Mar 13 18:04:41 2024 EDT
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/cadence/tsmc65nm/serdesmsc/serdesmsc/test/schematic/sch.oa.cdslck.dirlck
-TimeEditLocked                 Sat Mar 16 15:31:59 2024 EDT
+FilePathUsedToEditLock         /home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/serdes/FFE/schematic/sch.oa.cdslck.dirlck
+TimeEditLocked                 Wed Mar 13 18:04:58 2024 EDT

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<statedb ICVersion="IC6.1.7-64b.78" modifiedTime="03/13/2024 21:25:44" version="5">ExplorerRun.0
+<statedb ICVersion="IC6.1.7-64b.78" modifiedTime="03/15/2024 19:22:38" version="5">ExplorerRun.0
 	<Test Name="serdes:test:1">
 		<component Name="adeInfo" Type="skillTable">adeinfo
 			<field Name="descriptiontext" Type="string">"None"</field>
@@ -8,6 +8,69 @@
 		</component>
 		<component Name="analyses" Type="skillTable">asiEnvSaveTable
 			<analyses Name="analysis">
+				<analysis Name="ac">
+					<partition Name="fields">
+						<field Name="center" Type="string">""</field>
+						<field Name="contriblist" Type="list">nil</field>
+						<field Name="dec" Type="string">"10"</field>
+						<field Name="designVar" Type="string">""</field>
+						<field Name="dev" Type="string">""</field>
+						<field Name="deviceParam" Type="string">""</field>
+						<field Name="enable" Type="skillDpl"></field>
+						<field Name="fim_out" Type="string">""</field>
+						<field Name="flin_out" Type="string">""</field>
+						<field Name="freq" Type="string">""</field>
+						<field Name="incrType" Type="string">"Logarithmic"</field>
+						<field Name="lin" Type="string">""</field>
+						<field Name="log" Type="string">""</field>
+						<field Name="maxharm_nonlin" Type="string">""</field>
+						<field Name="mod" Type="string">""</field>
+						<field Name="modelParam" Type="string">""</field>
+						<field Name="out1" Type="string">""</field>
+						<field Name="out2" Type="string">""</field>
+						<field Name="outType" Type="string">"Voltage"</field>
+						<field Name="param" Type="string">""</field>
+						<field Name="perturbation" Type="string">"linear"</field>
+						<field Name="rangeType" Type="string">"Start-Stop"</field>
+						<field Name="rf1_freq" Type="string">""</field>
+						<field Name="rf1_src" Type="list">nil</field>
+						<field Name="rf2_freq" Type="string">""</field>
+						<field Name="rf2_src" Type="list">nil</field>
+						<field Name="rfdbm" Type="string">""</field>
+						<field Name="rfdbm2" Type="string">""</field>
+						<field Name="rfdbm3" Type="string">""</field>
+						<field Name="rfmag" Type="string">""</field>
+						<field Name="rfmag2" Type="string">""</field>
+						<field Name="rfmag3" Type="string">""</field>
+						<field Name="span" Type="string">""</field>
+						<field Name="special" Type="string">"None"</field>
+						<field Name="srcType" Type="string">"port"</field>
+						<field Name="start" Type="string">"1"</field>
+						<field Name="step" Type="string">""</field>
+						<field Name="stepTypeLin" Type="string">"Step Size"</field>
+						<field Name="stepTypeLog" Type="string">"Points Per Decade"</field>
+						<field Name="stop" Type="string">"20G"</field>
+						<field Name="sweep" Type="string">"Frequency"</field>
+						<field Name="sweepChange" Type="list">nil</field>
+						<field Name="useDiscrete" Type="list">nil</field>
+						<field Name="values" Type="list">nil</field>
+					</partition>
+					<partition Name="options">
+						<field Name="additionalParams" Type="string">""</field>
+						<field Name="annotate" Type="string">"status"</field>
+						<field Name="force" Type="string">""</field>
+						<field Name="nestlvl" Type="string">""</field>
+						<field Name="oppoint" Type="string">""</field>
+						<field Name="prevoppoint" Type="string">""</field>
+						<field Name="readforce" Type="string">""</field>
+						<field Name="readns" Type="string">""</field>
+						<field Name="restart" Type="string">""</field>
+						<field Name="save" Type="string">""</field>
+						<field Name="skipdc" Type="string">""</field>
+						<field Name="write" Type="string">""</field>
+						<field Name="writefinal" Type="string">""</field>
+					</partition>
+				</analysis>
 				<analysis Name="sp">
 					<partition Name="fields">
 						<field Name="center" Type="string">""</field>
@@ -16,7 +79,7 @@
 						<field Name="dev" Type="string">""</field>
 						<field Name="deviceParam" Type="string">""</field>
 						<field Name="donoise" Type="string">"no"</field>
-						<field Name="enable" Type="list">(t)</field>
+						<field Name="enable" Type="skillDpl"></field>
 						<field Name="freq" Type="string">""</field>
 						<field Name="incrType" Type="string">"Logarithmic"</field>
 						<field Name="iprobe" Type="string">""</field>
@@ -29,7 +92,7 @@
 						<field Name="modelParam" Type="string">""</field>
 						<field Name="oprobe" Type="string">""</field>
 						<field Name="param" Type="string">""</field>
-						<field Name="ports" Type="list">("/PORT0" "/PORT1")</field>
+						<field Name="ports" Type="list">("/PORT9" "/PORT10")</field>
 						<field Name="rangeType" Type="string">"Start-Stop"</field>
 						<field Name="span" Type="string">""</field>
 						<field Name="start" Type="string">"1"</field>
@@ -88,7 +151,7 @@
 						<field Name="paramValue" Type="string">""</field>
 						<field Name="param_file" Type="string">""</field>
 						<field Name="param_vec" Type="list">nil</field>
-						<field Name="stop" Type="string">"10n"</field>
+						<field Name="stop" Type="string">"20n"</field>
 						<field Name="tranNoise" Type="string">""</field>
 						<field Name="tranNoiseMultiRuns" Type="string">""</field>
 					</partition>
@@ -264,28 +327,7 @@
 			<field Name="modelFiles" Type="list">(("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_bip") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_mim") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_dnw") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_18") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_bip_npn") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfrtmom") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_mos_cap_25") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_18") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_disres") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_res") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_na") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfmos_33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_hvt") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfmvar") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfmos_18") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_na") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_na33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_lvt") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfres_sa") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_na33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_esd") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfmim") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_25od33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_25od33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_mos_cap") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_25") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_25ud18") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_25") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfmos") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_25ud18") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_na25od33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfjvar") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfmos_25") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rtmom") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_na25od33") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_dio_na25") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfres_rpo") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_hvt") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfind") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_rfmvar_25") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_na25") ("/home/cadence/PDK_CRN65GP_v1.0c_official_IC61_20101010/tsmcN65/../models/spectre/crn65gplus_2d5_lk_v1d0.scs" "tt_lvt"))</field>
 		</component>
 		<component Name="opPoints" Type="skillTable">opPoints
-			<field Name="opPoints" Type="skillList">
-				<field Name="opPoints_0" Type="defstruct">sevOpPointStruct
-					<field Name="cellName" Type="string">"pch"</field>
-					<field Name="fullName" Type="string">"/I0&lt;39&gt;/M2"</field>
-					<field Name="inLastSet" Type="list">nil</field>
-					<field Name="index" Type="fixnum">1</field>
-					<field Name="libName" Type="string">"tsmcN65"</field>
-					<field Name="opPoints" Type="string">"ron"</field>
-					<field Name="plotOp" Type="list">nil</field>
-					<field Name="saveOp" Type="symbol">t</field>
-				</field>
-				<field Name="opPoints_1" Type="defstruct">sevOpPointStruct
-					<field Name="cellName" Type="string">"nch"</field>
-					<field Name="fullName" Type="string">"/I0&lt;39&gt;/M3"</field>
-					<field Name="inLastSet" Type="list">nil</field>
-					<field Name="index" Type="fixnum">2</field>
-					<field Name="libName" Type="string">"tsmcN65"</field>
-					<field Name="opPoints" Type="string">"ron"</field>
-					<field Name="plotOp" Type="list">nil</field>
-					<field Name="saveOp" Type="symbol">t</field>
-				</field>
-			</field>
+			<field Name="opPoints" Type="list">nil</field>
 		</component>
 		<component Name="otherInfo" Type="skillTable">otherInfo
 			<field Name="mtsMode" Type="list">nil</field>
@@ -432,7 +474,41 @@
 				<field Name="uriMode" Type="string">"none"</field>
 			</partition>
 		</component>
-		<component Name="rfstim" Type="skillTable">rfstim</component>
+		<component Name="rfstim" Type="skillTable">rfstim
+			<field Name="&quot;1&quot;" Type="skillDpl">
+				<field Name="freq" Type="string">"12.5G"</field>
+				<field Name="freqIndex" Type="string">"freq"</field>
+				<field Name="freqVar" Type="string">"12.5G"</field>
+				<field Name="fundName" Type="string">""</field>
+				<field Name="maxHarms" Type="string">"3"</field>
+				<field Name="name" Type="string">"1"</field>
+				<field Name="oversample" Type="string">"1"</field>
+				<field Name="signal" Type="string">"Moderate"</field>
+				<field Name="srcId" Type="string">"PORT5"</field>
+			</field>
+			<field Name="&quot;2&quot;" Type="skillDpl">
+				<field Name="freq" Type="string">"12.5G"</field>
+				<field Name="freqIndex" Type="string">"freq"</field>
+				<field Name="freqVar" Type="string">"1/(80p-0)"</field>
+				<field Name="fundName" Type="string">""</field>
+				<field Name="maxHarms" Type="string">"3"</field>
+				<field Name="name" Type="string">"2"</field>
+				<field Name="oversample" Type="string">"1"</field>
+				<field Name="signal" Type="string">"Moderate"</field>
+				<field Name="srcId" Type="string">"V3"</field>
+			</field>
+			<field Name="&quot;3&quot;" Type="skillDpl">
+				<field Name="freq" Type="string">"1"</field>
+				<field Name="freqIndex" Type="string">"freq"</field>
+				<field Name="freqVar" Type="string">"1/(1-0)"</field>
+				<field Name="fundName" Type="string">""</field>
+				<field Name="maxHarms" Type="string">"3"</field>
+				<field Name="name" Type="string">"3"</field>
+				<field Name="oversample" Type="string">"1"</field>
+				<field Name="signal" Type="string">"Moderate"</field>
+				<field Name="srcId" Type="string">"V5"</field>
+			</field>
+		</component>
 		<component Name="simulationFiles" Type="skillTable">_simulationFiles
 			<field Name="EVcdFile" Type="string">""</field>
 			<field Name="EVcdInfoFile" Type="string">""</field>
@@ -554,7 +630,7 @@
 			</partition>
 		</component>
 		<component Name="spList" Type="skillTable">spPort
-			<field Name="spList" Type="list">((selectionObject fullName "/PORT1/MINUS" type terminal) (selectionObject fullName "/PORT1/PLUS" type terminal) (selectionObject fullName "/PORT0/MINUS" type terminal) (selectionObject fullName "/PORT0/PLUS" type terminal))</field>
+			<field Name="spList" Type="list">((selectionObject fullName "/PORT10/MINUS" type terminal) (selectionObject fullName "/PORT10/PLUS" type terminal) (selectionObject fullName "/PORT9/MINUS" type terminal) (selectionObject fullName "/PORT9/PLUS" type terminal))</field>
 		</component>
 		<component Name="subckts" Type="skillTable">subckt
 			<field Name="subcktKeepList" Type="list">nil</field>
@@ -625,8 +701,8 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
-						<field Name="definedIn" Type="list">nil</field>
 						<field Name="inLastSet" Type="list">nil</field>
+						<field Name="definedIn" Type="list">nil</field>
 					</field>
 					<field Name="outputList_1" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="list">nil</field>
@@ -660,10 +736,340 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
-						<field Name="definedIn" Type="list">nil</field>
 						<field Name="inLastSet" Type="list">nil</field>
+						<field Name="definedIn" Type="list">nil</field>
 					</field>
 					<field Name="outputList_2" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"VT(\"/rxp\")-VT(\"/rxm\")"</field>
+						<field Name="expression" Type="list">(VT("/rxp") - VT("/rxm"))</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">13</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_3" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"VT(\"/single\")"</field>
+						<field Name="expression" Type="list">VT("/single")</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">14</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_4" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"VT(\"/net013\")"</field>
+						<field Name="expression" Type="list">VT("/net013")</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">15</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_5" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"VT(\"/net013\")-VT(\"/bal_n\")"</field>
+						<field Name="expression" Type="list">(VT("/net013") - VT("/bal_n"))</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">16</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_6" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"S11 dB20"</field>
+						<field Name="expression" Type="list">db(spm('sp 1 1))</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">17</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="string">"rectangular"</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_7" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"S12 dB20"</field>
+						<field Name="expression" Type="list">db(spm('sp 1 2))</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">18</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="string">"rectangular"</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_8" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"S21 dB20"</field>
+						<field Name="expression" Type="list">db(spm('sp 2 1))</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">19</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="string">"rectangular"</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_9" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"S22 dB20"</field>
+						<field Name="expression" Type="list">db(spm('sp 2 2))</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">20</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="string">"rectangular"</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_10" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"v (/rxp /rxm); ac dB20(V)"</field>
+						<field Name="expression" Type="list">db((vfreq('ac "/rxp") - vfreq('ac "/rxm")))</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">21</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_11" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"v (/rxp /rxm); ac mag(V)"</field>
+						<field Name="expression" Type="list">(vfreq('ac "/rxp") - vfreq('ac "/rxm"))</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">22</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_12" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="string">"vinm"</field>
 						<field Name="expression" Type="list">VT("/vinm")</field>
 						<field Name="signal" Type="list">nil</field>
@@ -696,7 +1102,139 @@
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
 					</field>
-					<field Name="outputList_3" Type="defstruct">sevOutputStruct
+					<field Name="outputList_13" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"S11 mag"</field>
+						<field Name="expression" Type="list">spm('sp 1 1)</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">23</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="string">"rectangular"</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_14" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"v /vs; tran (V)"</field>
+						<field Name="expression" Type="list">vtime('tran "/vs")</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">24</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_15" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"v /vin1; tran (V)"</field>
+						<field Name="expression" Type="list">vtime('tran "/vin1")</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">25</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_16" Type="defstruct">sevOutputStruct
+						<field Name="name" Type="string">"v /vout1; tran (V)"</field>
+						<field Name="expression" Type="list">vtime('tran "/vout1")</field>
+						<field Name="signal" Type="list">nil</field>
+						<field Name="scriptFile" Type="list">nil</field>
+						<field Name="type2" Type="list">nil</field>
+						<field Name="evalType" Type="list">nil</field>
+						<field Name="displayIt" Type="list">nil</field>
+						<field Name="internalName" Type="list">nil</field>
+						<field Name="masterName" Type="list">nil</field>
+						<field Name="masterScriptFile" Type="list">nil</field>
+						<field Name="saveScriptFile" Type="list">nil</field>
+						<field Name="saveMasterScriptFile" Type="list">nil</field>
+						<field Name="isReferenced" Type="list">nil</field>
+						<field Name="lastEvalTime" Type="list">nil</field>
+						<field Name="origin" Type="list">nil</field>
+						<field Name="sweepSet" Type="list">nil</field>
+						<field Name="depList" Type="list">nil</field>
+						<field Name="type" Type="list">nil</field>
+						<field Name="areaTable" Type="list">nil</field>
+						<field Name="selectionDetail" Type="list">nil</field>
+						<field Name="value" Type="list">nil</field>
+						<field Name="plot" Type="symbol">t</field>
+						<field Name="save" Type="list">nil</field>
+						<field Name="march" Type="list">nil</field>
+						<field Name="index" Type="fixnum">26</field>
+						<field Name="timeStamp" Type="list">nil</field>
+						<field Name="graphType" Type="list">nil</field>
+						<field Name="yaxisLabel" Type="list">nil</field>
+						<field Name="label" Type="list">nil</field>
+						<field Name="yaxisUnit" Type="list">nil</field>
+						<field Name="sqlStatement" Type="list">nil</field>
+					</field>
+					<field Name="outputList_17" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="string">"vinp"</field>
 						<field Name="expression" Type="list">VT("/vinp")</field>
 						<field Name="signal" Type="list">nil</field>
@@ -729,7 +1267,7 @@
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
 					</field>
-					<field Name="outputList_4" Type="defstruct">sevOutputStruct
+					<field Name="outputList_18" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="string">"clk"</field>
 						<field Name="expression" Type="list">nil</field>
 						<field Name="signal" Type="string">"/net06"</field>
@@ -763,7 +1301,7 @@
 						<field Name="sqlStatement" Type="list">nil</field>
 						<field Name="inLastSet" Type="list">nil</field>
 					</field>
-					<field Name="outputList_5" Type="defstruct">sevOutputStruct
+					<field Name="outputList_19" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="list">nil</field>
 						<field Name="expression" Type="list">nil</field>
 						<field Name="signal" Type="string">"/voutp"</field>
@@ -795,10 +1333,10 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
-						<field Name="definedIn" Type="list">nil</field>
 						<field Name="inLastSet" Type="list">nil</field>
+						<field Name="definedIn" Type="list">nil</field>
 					</field>
-					<field Name="outputList_6" Type="defstruct">sevOutputStruct
+					<field Name="outputList_20" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="list">nil</field>
 						<field Name="expression" Type="list">nil</field>
 						<field Name="signal" Type="string">"/voutm"</field>
@@ -830,10 +1368,10 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
-						<field Name="definedIn" Type="list">nil</field>
 						<field Name="inLastSet" Type="list">nil</field>
+						<field Name="definedIn" Type="list">nil</field>
 					</field>
-					<field Name="outputList_7" Type="defstruct">sevOutputStruct
+					<field Name="outputList_21" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="list">nil</field>
 						<field Name="expression" Type="list">nil</field>
 						<field Name="signal" Type="string">"/rxp"</field>
@@ -865,10 +1403,10 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
-						<field Name="definedIn" Type="list">nil</field>
 						<field Name="inLastSet" Type="list">nil</field>
+						<field Name="definedIn" Type="list">nil</field>
 					</field>
-					<field Name="outputList_8" Type="defstruct">sevOutputStruct
+					<field Name="outputList_22" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="list">nil</field>
 						<field Name="expression" Type="list">nil</field>
 						<field Name="signal" Type="string">"/rxm"</field>
@@ -900,10 +1438,10 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
-						<field Name="definedIn" Type="list">nil</field>
 						<field Name="inLastSet" Type="list">nil</field>
+						<field Name="definedIn" Type="list">nil</field>
 					</field>
-					<field Name="outputList_9" Type="defstruct">sevOutputStruct
+					<field Name="outputList_23" Type="defstruct">sevOutputStruct
 						<field Name="name" Type="list">nil</field>
 						<field Name="expression" Type="list">nil</field>
 						<field Name="signal" Type="string">"/net08"</field>
@@ -935,140 +1473,8 @@
 						<field Name="label" Type="list">nil</field>
 						<field Name="yaxisUnit" Type="list">nil</field>
 						<field Name="sqlStatement" Type="list">nil</field>
-						<field Name="definedIn" Type="list">nil</field>
 						<field Name="inLastSet" Type="list">nil</field>
-					</field>
-					<field Name="outputList_10" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"VT(\"/rxp\")-VT(\"/rxm\")"</field>
-						<field Name="expression" Type="list">(VT("/rxp") - VT("/rxm"))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="list">nil</field>
-						<field Name="displayIt" Type="list">nil</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="symbol">t</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="index" Type="fixnum">13</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="sqlStatement" Type="list">nil</field>
-					</field>
-					<field Name="outputList_11" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"VT(\"/single\")"</field>
-						<field Name="expression" Type="list">VT("/single")</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="list">nil</field>
-						<field Name="displayIt" Type="list">nil</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="symbol">t</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="index" Type="fixnum">14</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="sqlStatement" Type="list">nil</field>
-					</field>
-					<field Name="outputList_12" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"VT(\"/net013\")"</field>
-						<field Name="expression" Type="list">VT("/net013")</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="list">nil</field>
-						<field Name="displayIt" Type="list">nil</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="symbol">t</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="index" Type="fixnum">15</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="sqlStatement" Type="list">nil</field>
-					</field>
-					<field Name="outputList_13" Type="defstruct">sevOutputStruct
-						<field Name="name" Type="string">"VT(\"/net013\")-VT(\"/bal_n\")"</field>
-						<field Name="expression" Type="list">(VT("/net013") - VT("/bal_n"))</field>
-						<field Name="signal" Type="list">nil</field>
-						<field Name="scriptFile" Type="list">nil</field>
-						<field Name="type2" Type="list">nil</field>
-						<field Name="evalType" Type="list">nil</field>
-						<field Name="displayIt" Type="list">nil</field>
-						<field Name="internalName" Type="list">nil</field>
-						<field Name="masterName" Type="list">nil</field>
-						<field Name="masterScriptFile" Type="list">nil</field>
-						<field Name="saveScriptFile" Type="list">nil</field>
-						<field Name="saveMasterScriptFile" Type="list">nil</field>
-						<field Name="isReferenced" Type="list">nil</field>
-						<field Name="lastEvalTime" Type="list">nil</field>
-						<field Name="origin" Type="list">nil</field>
-						<field Name="sweepSet" Type="list">nil</field>
-						<field Name="depList" Type="list">nil</field>
-						<field Name="type" Type="list">nil</field>
-						<field Name="areaTable" Type="list">nil</field>
-						<field Name="selectionDetail" Type="list">nil</field>
-						<field Name="value" Type="list">nil</field>
-						<field Name="plot" Type="symbol">t</field>
-						<field Name="save" Type="list">nil</field>
-						<field Name="march" Type="list">nil</field>
-						<field Name="index" Type="fixnum">16</field>
-						<field Name="timeStamp" Type="list">nil</field>
-						<field Name="graphType" Type="list">nil</field>
-						<field Name="yaxisLabel" Type="list">nil</field>
-						<field Name="label" Type="list">nil</field>
-						<field Name="yaxisUnit" Type="list">nil</field>
-						<field Name="sqlStatement" Type="list">nil</field>
+						<field Name="definedIn" Type="list">nil</field>
 					</field>
 				</field>
 				<partition Name="envSaveOptions">

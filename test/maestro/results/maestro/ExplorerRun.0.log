@@ -1,13 +1,27 @@
 Starting Single Run, Sweeps and Corners...
 
-Current time: Wed Mar 13 21:25:46 2024 
+Current time: Fri Mar 15 19:22:40 2024 
 Best design point: 1
 Design specs: 
 	serdes:test:1	corner	Nominal - 
+	VT("/rxp")-VT("/rxm")		Error	No
+	VT("/single")		Error	No
+	VT("/net013")		Error	No
+	VT("/net013")-VT("/bal_n")		Error	No
+	S11 dB20		Error	No
+	S12 dB20		Error	No
+	S21 dB20		Error	No
+	S22 dB20		Error	No
+	v (/rxp /rxm); ac dB20(V)		Error	No
+	v (/rxp /rxm); ac mag(V)		Error	No
+	S11 mag		Error	No
+	v /vs; tran (V)		Error	No
+	v /vin1; tran (V)		Error	No
+	v /vout1; tran (V)		Error	No
 Design parameters: 
 
 ExplorerRun.0
 Number of points completed: 1
-Number of simulation errors: 0
+Number of simulation errors: 14
 ExplorerRun.0 completed. 
-Current time: Wed Mar 13 21:25:58 2024 
+Current time: Fri Mar 15 19:23:20 2024 
